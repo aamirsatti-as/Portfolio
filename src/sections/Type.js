@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-//Script Changes
+//Script Changes 2
 function Type() {
   return (
     <Typewriter
