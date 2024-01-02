@@ -3,7 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser'; const Contact = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors },reset } = useForm();
     const form = useRef();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submissionSuccess, setSubmissionSuccess] = useState(false);
@@ -23,13 +23,11 @@ import emailjs from '@emailjs/browser'; const Contact = () => {
                 form.current,
                 process.env.REACT_APP_PUBLIC_KEY
             );
-
-            console.log(result);
-
             toast.success(`Email Sent Successfully`, {
                 position: toast.POSITION.TOP_CENTER,
                 autoClose: 5000,
             });
+            reset()
             setSubmissionSuccess(true);
         } catch (error) {
             console.error(error);
