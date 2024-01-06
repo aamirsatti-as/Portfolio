@@ -24,7 +24,7 @@ function HeroSetion() {
 
               <h1 className="heading-name">
                 I'm
-                <strong className="main-name"> Aamir Satti</strong>
+                <strong className="main-name"> Aamir Naseer</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
