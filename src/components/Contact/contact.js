@@ -43,7 +43,7 @@ import emailjs from '@emailjs/browser'; const Contact = () => {
     };
     return (
         <form ref={form} className='d-flex ms-2 w-100 px-3 justify-content-center ' onSubmit={handleSubmit(onSubmit)}>
-            <div className='w-75 w-md-25 mt-5'>
+            <div className='form-width mt-5'>
                 <Form.Group className="mb-3">
                     <Form.Label className='d-flex text-white'>Name</Form.Label>
                     <Form.Control type="text"  {...register('user_name', { required: 'Name is required' })} placeholder="Enter your name" />

@@ -37,5 +37,17 @@
   }
 }
 
+.form-width{
+  width:25% !important
+}
 
-
+@media screen and (max-width: 576px) {
+  .form-width{
+    width: 75% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .form-width{
+    width: 50% !important;
+  }
+}
